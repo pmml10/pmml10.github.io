@@ -736,3 +736,73 @@ body {
     align-self: stretch;
   }
 }
+.card-container {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);            
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 500px;  
+  width: 100%;       
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.image-wrapper img {
+  max-width: 100%; 
+  height: auto;    
+  display: block;
+  object-fit: contain;
+}
+
+.card-info {
+  margin-top: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.slogan {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+  opacity: 0.95;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  margin-bottom: 8px;
+  opacity: 0.85;
+}
+
+.price {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    padding: 16px;
+  }
+  
+  .slogan {
+    font-size: 0.95rem;
+  }
+  
+  .description {
+    font-size: 0.85rem;
+  }
+}
